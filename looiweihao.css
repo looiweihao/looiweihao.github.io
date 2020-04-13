@@ -1,6 +1,6 @@
 .container {
-  margin-left: 15%;
-  margin-right: 15%;
+  margin-left: 20%;
+  margin-right: 20%;
 }
 
 .table {
@@ -12,4 +12,8 @@
 .table td {
   border: 1px solid black;
   padding: 15px;
+}
+
+.thumbnails {
+  height: 43%;
 }
