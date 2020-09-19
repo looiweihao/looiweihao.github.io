@@ -1,10 +1,12 @@
 <html>
+
 <head>
   <title>
     Wei Hao's website
   </title>
   <link rel="stylesheet" href="looiweihao.css">
 </head>
+
 <body>
   <div class="container">
     <h1>My Books</h1>
@@ -22,6 +24,10 @@
         <td><i><b>WEI HAO'S RACING CAR GALLERY</b></i></td>
       </tr>
       <tr>
+        <td><i>Book4</i></td>
+        <td><i><b>WEI HAO'S PLANE GALLERY</b></i></td>
+      </tr>
+      <tr>
         <td><i>All Illustrated and written by</i> </td>
         <td><i><b>Wei hao looi</b></i></td>
       </tr>
@@ -36,10 +42,30 @@
       <li>
         <a href="cars.html"><i><b>Cars</b></i></a>
       </li>
-<li>
-<a href="info.html"><i><b>INFO</b></i></a>
-</li>
+      <li>
+        <a href="info.html"><i><b>INFO</b></i></a>
+      </li>
     </ul>
   </div>
+  <h1 id="bhb">1</h1>
+  <button onclick="vav()">countup</button>
+  <button onclick="ava()">countdown</button>
 </body>
+
+<script>
+  function vav() {
+    h1 = document.getElementById("bhb")
+    currentnumber = parseInt(h1.innerText)
+    newnumber = currentnumber + 1
+    h1.innerText = newnumber
+  }
+
+  function ava() {
+    h1 = document.getElementById("bhb")
+    currentnumber = parseInt(h1.innerText)
+    newnumber = currentnumber - 1
+    h1.innerText = newnumber
+  } 
+</script>
+
 </html>
