@@ -53,25 +53,24 @@
       </li>
     </ul>
   </div>
-  <h1 id="bhb">1</h1>
-  <button onclick="vav()">countup</button>
-  <button onclick="ava()">countdown</button>
+  <h1 id="ljl"></h1>
 </body>
 
-<script>
-  function vav() {
-    h1 = document.getElementById("bhb")
-    currentnumber = parseInt(h1.innerText)
-    newnumber = currentnumber + 1
-    h1.innerText = newnumber
-  }
+<style>
+  h1#ljl {
+    color: gold;
+    border: limegreen;
 
-  function ava() {
-    h1 = document.getElementById("bhb")
-    currentnumber = parseInt(h1.innerText)
-    newnumber = currentnumber - 1
-    h1.innerText = newnumber
-  } 
+  }
+</style>
+
+<script>
+  fetch("https://site-tracker-fwxopanleq-as.a.run.app/counter/weihao")
+    .then(res => res.text())
+    .then(text => {
+      h1 = document.getElementById("ljl")
+      h1.innerText = text
+    })
 </script>
 
 </html>
